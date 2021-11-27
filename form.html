@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Header start -->
+    <header class="header">
+        <div class="wrapper">
+            <!-- Header_nav start -->
+            <nav class="header_nav">
+                <!-- Header_pagination start -->
+                <div class="header_pagination">
+                    <a href="#">&laquo;</a>
+                    <a class="active" id="pagination" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                </div>
+                <!-- Header_pagination end -->
+                
+                <!-- Header_button start -->
+                <div class="header_button">
+                    <button hidden id="header_btn">
+                        Показать еще
+                    </button>
+                    <div id="header_field"></div>
+                </div>
+                <!-- Header_button end -->
+            </nav>
+            <!-- Header_nav end -->
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Main start -->
+    <main class="main">
+        <!-- Main Form start -->
+        <section class="main_form">
+            <div class="wrapper">
+                <!-- Title start -->
+                <h1 class="main_form_title">
+                    Форма для отправки комментария
+                </h1>
+                <!-- Title end -->
+
+                <!-- Form start -->
+                <form action="#" id="form" class="form_body" method="post">
+                    <!-- Form Name start -->
+                    <div class="form_item">
+                        <label for="formName" class="form_label">
+                            Имя*:
+                        </label>
+                        <input id="formName" type="text" name="name" class="form_imput">
+                    </div>
+                    <!-- Form Name end -->
+
+                    <!-- Form Message start -->
+                    <div class="form_item">
+                        <label for="formMessage" class="form_label">
+                            Комментарий*:
+                        </label>
+                        <textarea id="formMessage" name="text" class="form_imput">
+
+                        </textarea>
+                    </div>
+                    <!-- Form Message end -->
+
+                    <!-- Button Form start -->
+                    <button type="submit" id="formSubmit" class="form_buttom">
+                        Отправить
+                    </button>
+                    <!-- Button Form end -->
+                </form>
+                <!-- Form end -->
+            </div>
+        </section>
+        <!-- Main Form end -->
+
+    </main>
+    <!-- Main end -->
+
+    <!-- Footer start -->
+
+    <!-- Footer end -->
+<script src="./js/form.js"></script>
+</body>
+
+</html>

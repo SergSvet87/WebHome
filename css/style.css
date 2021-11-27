@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+/*--------------------*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.2;
+	color: black;
+	background-color: white;
+}
+
+/* Header start*/
+.wrapper {
+	background-color: #ede6e6;
+	width: 1000px;
+	height: 100vh;
+	margin: 0 auto;
+}
+
+.header {
+	width: 100%;
+	height: 150px;
+}
+
+.header_nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px 0;
+}
+
+.header_pagination {
+	width: 400px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+/* Ссылки для разбиения на страницы */
+.header_pagination a {
+	color: black;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color .3s;
+	border-radius: 10px;
+}
+
+/* Стиль активной/текущей ссылки */
+.header_pagination a.active {
+	background-color: dodgerblue;
+	color: azure;
+	border-radius: 10px;
+}
+
+/* Добавить серый цвет фона при наведении курсора мыши */
+.header_pagination a:hover:not(.active) {
+	background-color: rgb(173, 172, 172);
+}
+
+.header_button>button {
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	background-color: white;
+	border-radius: 15px;
+	font-size: 20px;
+	margin-right: 150px;
+}
+
+button[hidden] .sending{
+	visibility: visible;
+}
+
+button:hover{
+	background-color: rgb(173, 172, 172);
+}
+/* Header end*/
+
+
+/* Main start */
+form *{
+	outline: none;
+}
+
+.main_form_title {
+	padding-top: 20px;
+	font-size: 36px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.form_body {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.form_item {
+	margin-bottom: 25px;
+}
+
+.form_label {
+	font-size: 18px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.form_imput {
+	width: 100%;
+	height: 50px;
+	padding: 0 20px;
+	border-radius: 15px;
+	font-size: 18px;
+}
+
+.form_imput:focus{
+	box-shadow: 0 0 15px #918b8b;
+}
+
+.form_input:valid {
+	border-color: green;
+}
+
+.form_input:invalid {
+	border-color: red;
+}
+
+textarea.form_imput{
+	min-height: 100px;
+	padding-top: 15px;
+	resize: vertical;
+}
+
+.form_buttom {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	background-color: white;
+	border-radius: 15px;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	box-shadow: 0 5px 0 #cdcaca;
+}
+
+/* Main end */
+
+
+/* Footer start */
+
+
+
+/* Footer end */
